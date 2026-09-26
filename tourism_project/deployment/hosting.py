@@ -32,7 +32,7 @@ def main():
     # locally / in static mode, as shown in the Streamlit App section above.
     api = HfApi(token=token)
     create_repo(
-        repo_id=SPACE_REPO_ID, repo_type="space", space_sdk="docker",
+        repo_id=SPACE_REPO_ID, repo_type="space", space_sdk="static",
         token=token, exist_ok=True,
     )
     api.upload_folder(
